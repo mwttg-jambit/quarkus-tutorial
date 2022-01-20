@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "8510439d-116f-4354-99d3-1ca8e3e412d4",
+		"name": "Quarkus Tutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "feature",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8089/feature/example-table",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"feature",
+								"example-table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Suppenkasper\",\n    \"isUsed\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8089/feature/example-table",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"feature",
+								"example-table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8089/feature/example-table/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"feature",
+								"example-table",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
